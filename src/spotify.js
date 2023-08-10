@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndpoint = "https://accounts.spotify.com/authorize?";
 const clientId = "5ae4eb45b80045d1b6b4ef03430106ba";
-const redirectUri = "http://localhost:3000";
+const redirectUri = "https://musicalli.onrender.com";
 const scopes = ["user-library-read", "playlist-read-private", "playlist-modify-private", "playlist-modify-public","user-library-modify", "user-top-read", "playlist-read-collaborative" ];
 
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
